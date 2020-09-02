@@ -13,5 +13,5 @@ end
 post '/game/' do
     result = params[:word] || ""
 
-    erb :index, :locals => {'result' => result}
+    erb :index, :locals => {'result' => 0}
 end

@@ -7,5 +7,6 @@ When("ingreso la palabra {string}") do |word|
     click_button "Probar"
 end
   
-Then("el score es {int}") do |int|
+Then("el score es {int}") do |score|
+    expect(page).to have_css "div#mensaje", text: score
 end
