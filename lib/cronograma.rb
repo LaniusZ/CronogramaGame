@@ -1,5 +1,6 @@
 class Cronograma
     def puntaje(word)
-        0
+        puntaje = word.count("i")
+        puntaje += word.count("v")*5
     end
 end
