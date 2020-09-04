@@ -6,12 +6,17 @@ get '/' do
     erb :hello_form
 end
 
-get '/game/' do
+get '/game' do
     erb :hello_form
 end
 
-post '/game/' do
-    result = params[:word] || ""
-
-    erb :index, :locals => {'result' => 0}
+post '/game' do
+    resultado = params[:word] || ""
+    erb :index, :locals => {"result" => 0}
 end
+
+#post '/game' do
+#    resultado = params[:word] || ""
+#       if resultado = 
+#    erb :index, :locals => {"result" => :puntaje}
+#end
