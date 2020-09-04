@@ -19,4 +19,10 @@ describe Cronograma do
         expect(puntaje).to eq 5
     end
 
+    it "cuenta mayúsculas y minusculas" do
+        cronograma= Cronograma.new
+        puntaje= cronograma.puntaje("Ver")
+        expect(puntaje).to eq 5
+    end
+
 end
