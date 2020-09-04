@@ -24,3 +24,13 @@ Scenario: Si la palabra contiene i y v sumar 1 punto por cada i y 5 por cada v
 Given inicio aplicacion
 When ingreso la palabra "vivir"
 Then el score es 12
+
+Scenario: Si la palabra juan
+Given inicio aplicacion
+When ingreso la palabra "juan"
+Then el score es 0
+
+Scenario: Si la palabra Vida
+Given inicio aplicacion
+When ingreso la palabra "Vida"
+Then el score es 506
